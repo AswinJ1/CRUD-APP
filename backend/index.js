@@ -8,7 +8,7 @@ const bodyParser = require('body-parser')
 // Connecting MongoDB
 async function mongoDbConnection() {
     await mongoose.connect(
-      "mongodb://127.0.0.1:27017/test",
+      "mongodb+srv://aswinjbca2019:abcd@cluster0.gkkush3.mongodb.net/?retryWrites=true&w=majority",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
