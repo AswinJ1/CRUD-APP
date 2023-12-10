@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from './../../service/api.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
+
 
 @Component({
   selector: 'app-employee-edit',
@@ -20,7 +22,8 @@ export class EmployeeEditComponent implements OnInit {
     public fb: FormBuilder,
     private actRoute: ActivatedRoute,
     private apiService: ApiService,
-    private router: Router
+    private router: Router,
+    private _snackBar: MatSnackBar
   ) {}
 
   ngOnInit() {
@@ -40,7 +43,10 @@ export class EmployeeEditComponent implements OnInit {
       phoneNumber: ['', [Validators.required, Validators.pattern('^[0-9]+$')]],
     });
   }
-
+  openSnackBar(message: string): void {
+    this._snackBar.open(message, 'Close', {
+      duration: 2000,
+    });}
   // Choose options with select-dropdown
   updateProfile(e) {
     this.editForm.get('designation').setValue(e, {

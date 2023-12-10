@@ -1,0 +1,83 @@
+
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.overview h2,
+.overview p,
+.overview ul,
+.overview li {
+  color: #333;
+}
+
+.overview ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.overview li {
+  margin-bottom: 10px;
+}
+
+.crud-actions {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line on small screens */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin: 5px; /* Add margin between buttons */
+}
+
+.btn-primary {
+  background-color: #ff5c5c;
+  color: #fff;
+}
+
+.btn-success {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.btn-warning {
+  background-color: #ffbb33;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #555;
+}

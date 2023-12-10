@@ -1,0 +1,13 @@
+/* Set text color for toolbar links */
+.toolbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 16px;
+    font-weight: 600;
+  }
+  
+  /* Change link color on hover */
+  .toolbar a:hover {
+    color: #cfd8dc; /* You can adjust the hover color as needed */
+  }
+  

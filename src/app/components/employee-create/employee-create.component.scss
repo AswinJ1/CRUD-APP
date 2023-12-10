@@ -1,0 +1,32 @@
+/* employee-create.component.scss */
+@keyframes hovering {
+    /* Define your keyframes here */
+    0% {
+      /* Styles at the start of the animation */
+      transform: translateY(0);
+    }
+    50% {
+      /* Styles at the middle of the animation */
+      transform: translateY(-10px);
+    }
+    100% {
+      /* Styles at the end of the animation */
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply the animation properties to the image element */
+  .col-md-4 img {
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: hovering;
+    /* You can remove the rest of the animation properties if not needed for your case */
+  }
+  
+
+  

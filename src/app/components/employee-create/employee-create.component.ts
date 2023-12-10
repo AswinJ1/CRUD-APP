@@ -2,6 +2,8 @@ import { Router } from '@angular/router';
 import { ApiService } from './../../service/api.service';
 import { Component, OnInit, NgZone } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
+
 
 @Component({
   selector: 'app-employee-create',
@@ -18,7 +20,8 @@ export class EmployeeCreateComponent implements OnInit {
     public fb: FormBuilder,
     private router: Router,
     private ngZone: NgZone,
-    private apiService: ApiService
+    private apiService: ApiService,
+    private _snackBar: MatSnackBar
   ) {
     this.mainForm();
   }
@@ -39,6 +42,11 @@ export class EmployeeCreateComponent implements OnInit {
       phoneNumber: ['', [Validators.required, Validators.pattern('^[0-9]+$')]],
     });
   }
+
+  openSnackBar(message: string): void {
+    this._snackBar.open(message, 'Close', {
+      duration: 2000,
+    });}
 
   // Choose designation with select dropdown
   updateProfile(e) {

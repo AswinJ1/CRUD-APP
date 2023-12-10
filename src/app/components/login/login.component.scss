@@ -1,0 +1,41 @@
+/* Add this CSS to your styles.css or component-specific styles file */
+
+mat-card {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Set a background color */
+  border-radius: 8px; /* Add rounded corners */
+  overflow: hidden; /* Ensure rounded corners are applied */
+  transition: box-shadow 0.3s ease; /* Add a smooth transition to the box shadow */
+
+  &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+  }
+}
+
+mat-card-header {
+  text-align: center; /* Center align the header text */
+}
+
+.example-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  background-color: #007bff; /* Set button color */
+  color: #fff; /* Set button text color */
+  transition: background-color 0.3s ease; /* Add a smooth transition to the background color */
+
+  &:hover {
+    background-color: #0056b3; /* Darken button color on hover */
+  }
+}
